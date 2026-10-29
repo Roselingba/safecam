@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeCam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Header Fixe en haut -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="#">Safe<span>Cam</span></a>
+        </div>
+
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#" class="nav-item active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-item" data-page="about">About</a></li>
+                <li><a href="#" class="nav-item" data-page="services">Services</a></li>
+                <li><a href="#" class="nav-item" data-page="pages">Pages</a></li>
+                <li><a href="#" class="nav-item" data-page="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="phone-button">
+            <a href="tel:+22961528962">
+                <i class="fa-solid fa-phone"></i> +229 61528962
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section avec Slider -->
+    <section class="hero-container">
+        <!-- Pistes d'images en arrière-plan qui défilent -->
+        <div class="slider-track">
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+        </div>
+
+        <!-- Masque de contraste sombre -->
+        <div class="hero-overlay"></div>
+
+        <!-- Contenu dynamique affiché au-dessus du slider -->
+        <div class="hero-content" id="hero-content">
+            <!-- Injecté dynamiquement par JS -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
