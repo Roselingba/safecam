@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeCam</title>
+    <title>SafeCam - Accueil</title>
+    <!-- Font Awesome pour les icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navigation Header Fixe en haut -->
+    <!-- NAVBAR FIXE -->
     <header class="navbar">
         <div class="logo">
-            <a href="#">Safe<span>Cam</span></a>
+            <a href="index.html">Safe<span>Cam</span></a>
         </div>
 
         <nav class="nav-links">
             <ul>
-                <li><a href="#" class="nav-item active" data-page="home">Home</a></li>
-                <li><a href="#" class="nav-item" data-page="about">About</a></li>
-                <li><a href="#" class="nav-item" data-page="services">Services</a></li>
-                <li><a href="#" class="nav-item" data-page="pages">Pages</a></li>
-                <li><a href="#" class="nav-item" data-page="contact">Contact</a></li>
+                <li><a href="index.html" class="nav-item active">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="services.html" class="nav-item">Services</a></li>
+
+                <!-- Sous-menu déroulant pour "Pages" -->
+                <li class="dropdown">
+                    <a href="#" class="nav-item dropdown-toggle">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Pricing plan</a></li>
+                        <li><a href="#">Blog grid</a></li>
+                        <li><a href="#">Blog details</a></li>
+                        <li><a href="#">The team</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.html" class="nav-item">Contact</a></li>
             </ul>
         </nav>
 
@@ -32,24 +47,319 @@
         </div>
     </header>
 
-    <!-- Hero Section avec Slider -->
+    <!-- SECTION 1: HERO SLIDER (Défilement 5s) -->
     <section class="hero-container">
-        <!-- Pistes d'images en arrière-plan qui défilent -->
         <div class="slider-track">
             <div class="slide slide-1"></div>
             <div class="slide slide-2"></div>
             <div class="slide slide-3"></div>
         </div>
-
-        <!-- Masque de contraste sombre -->
         <div class="hero-overlay"></div>
-
-        <!-- Contenu dynamique affiché au-dessus du slider -->
-        <div class="hero-content" id="hero-content">
-            <!-- Injecté dynamiquement par JS -->
+        <div class="hero-content">
+            <p class="subtitle">BEST SECURITY SERVICES</p>
+            <h1 class="main-title">Safe & Secure Home<br>For Your Family</h1>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">Get quote</a>
+                <a href="#" class="btn btn-secondary">Contact us</a>
+            </div>
         </div>
     </section>
 
+    <!-- SECTION 2: ABOUT US -->
+    <section class="section about-section reveal">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="images/aa.jpg" alt="CCTV Camera">
+            </div>
+            <div class="about-text">
+                <p class="section-tag">ABOUT US</p>
+                <h2 class="section-title">We Offers Quality CCTV Systems & Services</h2>
+                <p class="text-highlight">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem sit clita
+                    duo justo magna dolore</p>
+                <p class="text-description">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu
+                    diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit.
+                    Sanctus clita duo justo et tempor eirmod magna dolore erat amet et magna</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES -->
+    <section class="section services-section reveal">
+        <div class="container text-center">
+            <p class="section-tag">Services</p>
+            <h2 class="section-title">Our Excellent CCTV<br>Security Services</h2>
+
+            <div class="cards-grid">
+                <div class="card service-card">
+                    <i class="fa-solid fa-camera icon-red"></i>
+                    <h3>Cctv</h3>
+                    <h4>Installation</h4>
+                    <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                    <a href="#" class="link-btn">Read more &rarr;</a>
+                </div>
+                <div class="card service-card">
+                    <i class="fa-solid fa-sliders icon-red"></i>
+                    <h3>Cctv</h3>
+                    <h4>Configuration</h4>
+                    <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                    <a href="#" class="link-btn">Read more &rarr;</a>
+                </div>
+                <div class="card service-card highlighted-blue">
+                    <i class="fa-solid fa-wrench icon-white"></i>
+                    <h3>Cctv</h3>
+                    <h4>Maintenance</h4>
+                    <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                    <a href="#" class="link-btn white">Read more &rarr;</a>
+                </div>
+                <div class="card service-card">
+                    <i class="fa-solid fa-screwdriver-wrench icon-red"></i>
+                    <h3>Cctv</h3>
+                    <h4>Repair & Service</h4>
+                    <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                    <a href="#" class="link-btn">Read more &rarr;</a>
+                </div>
+                <div class="card service-card">
+                    <i class="fa-solid fa-desktop icon-red"></i>
+                    <h3>Cctv</h3>
+                    <h4>Monitoring</h4>
+                    <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                    <a href="#" class="link-btn">Read more &rarr;</a>
+                </div>
+                <div class="card service-card highlighted-blue">
+                    <i class="fa-solid fa-key icon-white"></i>
+                    <h3>Cctv</h3>
+                    <h4>Access Control</h4>
+                    <p>Kasd dolor no lorem sit tempor at justo rebum rebum stet justo elitr dolor amet sit</p>
+                    <a href="#" class="link-btn white">Read more &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PRICING PLAN -->
+    <section class="section pricing-section reveal">
+        <div class="container text-center">
+            <p class="section-tag">Pricing plan</p>
+            <h2 class="section-title">Pricing Plan For CCTV<br>Security Services</h2>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header header-blue">
+                        <h3>Basic Plan</h3>
+                        <p class="price"><sup>$</sup>49 <span>/ Mo</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>HTML5 & CSS3</li>
+                        <li>Bootstrap v5</li>
+                        <li>Responsive Layout</li>
+                        <li>Browsers Compatibility</li>
+                        <li>Easy to Use</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header header-red">
+                        <h3>Standard Plan</h3>
+                        <p class="price"><sup>$</sup>49 <span>/ Mo</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>HTML5 & CSS3</li>
+                        <li>Bootstrap v5</li>
+                        <li>Responsive Layout</li>
+                        <li>Browsers Compatibility</li>
+                        <li>Easy to Use</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header header-blue">
+                        <h3>Extended Plan</h3>
+                        <p class="price"><sup>$</sup>49 <span>/ Mo</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>HTML5 & CSS3</li>
+                        <li>Bootstrap v5</li>
+                        <li>Responsive Layout</li>
+                        <li>Browsers Compatibility</li>
+                        <li>Easy to Use</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: SPECIAL OFFER -->
+    <section class="offer-section reveal">
+        <div class="offer-overlay"></div>
+        <div class="offer-content text-center">
+            <p class="subtitle">SPECIAL OFFER</p>
+            <h2 class="offer-title">Save 50% On All Items<br>Your First Order</h2>
+            <p class="offer-desc">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at
+                dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr
+                ut dolores magna sit. Sea dolore sed et.</p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary">Order now</a>
+                <a href="#" class="btn btn-secondary">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: TEAM MEMBERS -->
+    <section class="section team-section reveal">
+        <div class="container text-center">
+            <p class="section-tag">Team members</p>
+            <h2 class="section-title">Our Professional Team<br>Members</h2>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600"
+                            alt="Team Member">
+                        <div class="social-overlay">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Full name</h3>
+                        <p>Designation</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600"
+                            alt="Team Member">
+                        <div class="social-overlay">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Full name</h3>
+                        <p>Designation</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600"
+                            alt="Team Member">
+                        <div class="social-overlay">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Full name</h3>
+                        <p>Designation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: BLOG POSTS (2 CARTES DU BAS) -->
+    <section class="section blog-section reveal">
+        <div class="container text-center">
+            <p class="section-tag">Blog post</p>
+            <h2 class="section-title">Latest Articles From Our<br>Blog Post</h2>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img-box">
+                        <img src="images/az.jpg" alt="Blog Image 1">
+                        <div class="date-badge">
+                            <span class="day">01</span>
+                            <span class="month">January</span>
+                        </div>
+                    </div>
+                    <div class="blog-info">
+                        <p class="blog-meta">Admin | web design</p>
+                        <h3 class="blog-title">Kasd dolor lorem sit justo rebum stet justo</h3>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-img-box">
+                        <img src="images/aa.jpg" alt="Blog Image 2">
+                        <div class="date-badge">
+                            <span class="day">01</span>
+                            <span class="month">January</span>
+                        </div>
+                    </div>
+                    <div class="blog-info">
+                        <p class="blog-meta">Admin | web design</p>
+                        <h3 class="blog-title">Kasd dolor lorem sit justo rebum stet justo</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER COMPLET -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="index.html">&rarr; Home</a></li>
+                    <li><a href="about.html">&rarr; About us</a></li>
+                    <li><a href="services.html">&rarr; Our services</a></li>
+                    <li><a href="blog-grid.html">&rarr; Lastest Blog</a></li>
+                    <li><a href="contact.html">&rarr; Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Populars links</h3>
+                <ul>
+                    <li><a href="index.html">&rarr; Home</a></li>
+                    <li><a href="about.html">&rarr; About us</a></li>
+                    <li><a href="services.html">&rarr; Our services</a></li>
+                    <li><a href="blog-grid.html">&rarr; Lastest Blog</a></li>
+                    <li><a href="contact.html">&rarr; Contact us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Get in touch</h3>
+                <p>123 Street, New York, USA</p>
+                <p>info@example.com</p>
+                <p>+012 345 67890</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Follow us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-btn">Link</a>
+                    <a href="#" class="social-btn">Link</a>
+                    <a href="#" class="social-btn">Link</a>
+                    <a href="#" class="social-btn">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="newsletter-box">
+            <form action="#">
+                <input type="email" placeholder="Your email">
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+
+        <div class="copyright-bar">
+            <p>&copy; <a href="#">Your site name</a>. All right reserved</p>
+            <p>Designed by <a href="#">HTML Codex</a></p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
