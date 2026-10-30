@@ -824,3 +824,46 @@ body {
     color: #ffffff;
     text-decoration: underline;
 }
+
+
+/* CORRECTION DES ESPACES ENTRE LES ÉLÉMENTS DU SOUS-MENU */
+
+.dropdown-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    row-gap: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Réinitialisation des éléments du menu */
+.dropdown-menu li {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: normal !important;
+    flex: 0 0 auto !important;
+}
+
+/* Réinitialisation des liens */
+.dropdown-menu li a {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 14px 18px !important;
+    line-height: 1.4 !important;
+    box-sizing: border-box !important;
+}
+
+/* Suppression des espaces et éléments décoratifs */
+.dropdown-menu li::before,
+.dropdown-menu li::after,
+.dropdown-menu li a::before,
+.dropdown-menu li a::after {
+    display: none !important;
+    content: none !important;
+}
